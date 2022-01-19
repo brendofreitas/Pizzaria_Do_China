@@ -7,6 +7,9 @@ namespace Pizzaria_Do_China
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            
+            Console.ReadLine();
+
         }
     }
 }
