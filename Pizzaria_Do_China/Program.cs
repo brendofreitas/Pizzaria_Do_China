@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pizzaria_Do_China.funcionarios;
+using System;
 
 namespace Pizzaria_Do_China
 {
@@ -9,6 +10,10 @@ namespace Pizzaria_Do_China
             Console.WriteLine("Hello World!");
             
             Console.ReadLine();
+
+            Funcionario Brendo = new Funcionario("Brendo",12872266712);
+
+            Console.WriteLine($"Executando o Nome:");
 
         }
     }

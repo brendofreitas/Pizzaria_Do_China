@@ -9,16 +9,20 @@ namespace Pizzaria_Do_China.funcionarios
     public class Funcionario
     {
         private string Nome;
-        private int Cpf;
+        private long Cpf;
+        private double Salario;
+       
 
-        public Funcionario(string nome)
+      
+
+        public Funcionario (string nome, long cpf, double salario)
         {
             Nome = nome;
+            Cpf= cpf;
+            Salario = salario;
+
         }
 
-        public Funcionario(int cpf)
-        {
-            Cpf = cpf;
-        }
+
     }
 }
