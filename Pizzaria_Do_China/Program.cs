@@ -11,9 +11,10 @@ namespace Pizzaria_Do_China
             
             Console.ReadLine();
 
-            Funcionario Brendo = new Funcionario("Brendo",12872266712);
+            Funcionario Brendo = new Funcionario("Brendo",12872266712,3000);
 
-            Console.WriteLine($"Executando o Nome:");
+
+            Console.WriteLine($"Executando o Nome:{Brendo.bonificacao(3000)}");
 
         }
     }

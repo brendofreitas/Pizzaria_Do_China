@@ -23,6 +23,13 @@ namespace Pizzaria_Do_China.funcionarios
 
         }
 
+         virtual public double bonificacao(double Salario)
+        {
+            double bonificacao = Salario * 0.2;
+            return bonificacao;
+
+        }
+
 
     }
 }
