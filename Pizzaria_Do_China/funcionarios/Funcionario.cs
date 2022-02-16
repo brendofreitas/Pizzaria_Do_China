@@ -30,6 +30,10 @@ namespace Pizzaria_Do_China.funcionarios
 
         }
 
+        public override string ToString()
+        {
+            return "Nome: " + Nome + ", CPF: " + Cpf + ", Salario: " + Salario;
+        }
 
     }
 }

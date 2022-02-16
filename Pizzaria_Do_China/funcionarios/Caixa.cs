@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Pizzaria_Do_China.funcionarios
 {
-    internal class Caixa
-    {
+    internal class Caixa { 
+   
+
+        
+
     }
 }

@@ -9,6 +9,7 @@ namespace Pizzaria_Do_China.funcionarios
     public class Gerente : Funcionario 
     {
 
+
         public Gerente(string nome, long cpf, double salario) : base(nome, cpf,salario)
         {
 
@@ -21,7 +22,7 @@ namespace Pizzaria_Do_China.funcionarios
 
         public override double bonificacao(double salario)
         {
-            double bonificacao = salario * 2.0 ;
+            double bonificacao = salario * 0.5 ;
             return bonificacao;
         }
     }
