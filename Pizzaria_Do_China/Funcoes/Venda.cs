@@ -9,8 +9,10 @@ namespace Pizzaria_Do_China.Funcoes
 {
     public class Venda : Produtos
     {
+        private double valorProduto;
+
         public int VendaId { get; set; }
-        public double ValorProduto { get; set; }
+        public double ValorProduto { get => valorProduto; set => valorProduto = value; }
 
         public EProdutos TipoProdutos { get; set; }
 
@@ -25,20 +27,19 @@ namespace Pizzaria_Do_China.Funcoes
 
         }
 
-        
-
         public override string ToString()
         {
             return "ID: " + VendaId + " Valor: " + ValorProduto + "Tipo do Produto: " + TipoProdutos;
         }
 
-        public virtual void ValorTotal(List<Venda> venda)
+        public virtual void ValorTotal(List<Cliente> vendas)
         {
             double total = 0;
-            foreach (Venda v in venda)
+
+            foreach (Cliente v in vendas)
             {
-                total = total + v.ValorProduto;
-                Console.WriteLine(total);
+                total += v.ValorProduto;
+                Console.WriteLine("Teste" + total);
             }
         }
     }

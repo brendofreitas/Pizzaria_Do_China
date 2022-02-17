@@ -11,31 +11,21 @@ namespace Pizzaria_Do_China
     {
         static void Main(string[] args)
         {
-            Funcionario Brendo = new Funcionario("Brendo", 12872266712, 3000);
+            //Funcionario Brendo = new Funcionario("Brendo", 12872266712, 3000);
+            List<Cliente> vendas = new List<Cliente>();
+            vendas.Add(new Cliente(01, 20.09, (EProdutos)2,128722,"Brendo"));
+            vendas.Add(new Cliente(02, 30.24, (EProdutos)1,205484,"Raphael"));
 
-
-            
-
-            List<Venda> vendas = new List<Venda>();
-
-            
-            vendas.Add(new Venda(01, 20, (EProdutos)2));
-            vendas.Add(new Venda(02, 30.24, (EProdutos)1));
-
-
-            Console.WriteLine();
-            foreach (Venda item in vendas)
+            foreach (Cliente item in vendas)
             {
                 Console.WriteLine(item);
-               
-                
             }
-
-            var total = new Venda();
+            var total = new Cliente();
             total.ValorTotal(vendas);
 
 
 
+            Console.ReadLine();
 
            
 

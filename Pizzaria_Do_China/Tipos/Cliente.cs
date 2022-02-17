@@ -9,7 +9,7 @@ namespace Pizzaria_Do_China.Tipos
 {
     public class Cliente : Venda 
     {
-        private int CPF { get; set; }
+        private float CPF { get; set; }
         private string Nome { get; set; }
         public Cliente(int id, double valor, EProdutos TiposDeProdutos, int cpf, string nome) : base(id, valor, TiposDeProdutos)
         {
@@ -17,12 +17,21 @@ namespace Pizzaria_Do_China.Tipos
             Nome = nome;
         }
 
-       
+        public Cliente()
+        {
 
+        }
         
+        public void Total(List<Cliente> vendas)
+        {
+            
+        }
 
 
 
 
-}
+
+
+
+    }
 }
